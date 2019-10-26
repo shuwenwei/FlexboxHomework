@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FlexboxHomework</title>
+    <style>
+        .outerContainer {
+            background-color: lightgray;
+            width: 600px;
+            padding: 10px;
+            height: 400px;
+            display: -webkit-flex;
+            flex-direction: row;
+        }
+        .one,.three,.five,.six,.seven {
+            border-radius: 10px;
+            background-color: white;
+            width: 80px;
+            height: 110px;
+            margin: 10px;
+            display: -webkit-flex;
+        }
+        .one{
+            flex-direction: column;
+            justify-content: center;
+        }
+        .three {
+            flex-direction: column;
+        }
+        .five {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .six {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .seven {
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .largeCircle{
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            border: green solid 10px;
+            margin: 5px;
+        }
+        .normalCircle{
+            width: 28px;
+            height: 28px;
+            border-radius: 28px;
+            border: solid 3px;
+            margin: 1px;
+        }
+        .smallCircle {
+            width: 18px;
+            height: 18px;
+            border-radius: 18px;
+            border: solid 4px;
+            margin: 3px;
+        }
+        .smallestCircle{
+            width: 13px;
+            height: 13px;
+            border: solid 3px;
+            border-radius: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outerContainer">
+        <div class="one">
+            <div class="largeCircle"></div>
+        </div>
+        <div class="three">
+            <div class="normalCircle" style="border-color: black"></div>
+            <div class="normalCircle" style="border-color: orangered;align-self: center"></div>
+            <div class="normalCircle" style="border-color: green;align-self: end"></div>
+        </div>
+        <div class="five">
+            <div class="smallCircle" style="border-color: green"></div>
+            <div class="smallCircle" style="border-color: black"></div>
+            <div class="smallCircle" style="border-color: orangered;align-self: center;margin-right: 15px;margin-left: 15px"></div>
+            <div class="smallCircle" style="border-color: black"></div>
+            <div class="smallCircle" style="border-color: green"></div>
+        </div>
+        <div class="six">
+            <div class="smallCircle" style="border-color: green;margin-bottom: 14px"></div>
+            <div class="smallCircle" style="border-color: green;margin-bottom: 14px"></div>
+            <div class="smallCircle" style="border-color: orangered;"></div>
+            <div class="smallCircle" style="border-color: orangered"></div>
+            <div class="smallCircle" style="border-color: orangered"></div>
+            <div class="smallCircle" style="border-color: orangered"></div>
+        </div>
+        <div class="seven">
+            <div class="three" style="height: 50px">
+                <div class="smallestCircle" style="border-color: green;align-self: flex-start"></div>
+                <div class="smallestCircle" style="border-color: green;align-self: center"></div>
+                <div class="smallestCircle" style="border-color: green;align-self: flex-end"></div>
+            </div>
+            <div class="smallestCircle" style="border-color: orangered;margin-left: 15px;"></div>
+            <div class="smallestCircle" style="border-color: orangered;margin-right: 15px"></div>
+            <div class="smallestCircle" style="border-color: orangered;margin-left: 15px"></div>
+            <div class="smallestCircle" style="border-color: orangered;margin-right: 15px"></div>
+        </div>
+    </div>
+</body>
+</html>
